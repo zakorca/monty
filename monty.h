@@ -1,12 +1,11 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 
 extern int push_val;
-
 #define uint unsigned int
 
 /**
@@ -41,16 +40,17 @@ typedef struct instruction_s
 } instruction_t;
 
 void push(stack_t **stack, unsigned int);
-void swap_nodes(stack_t **stack, unsigned int);
-void free_stack_memo(stack_t *top);
-void pint_func(stack_t **stack, unsigned int);
-void pall(stack_t **stack, unsigned int);
-void push_helper(char *opcode, stack_t **stack, int line_number);
 void nop(stack_t **stack, unsigned int);
-void pop_stack(stack_t **stack, uint);
+void pint_func(stack_t **stack, unsigned int);
 void add_nodes(stack_t **stack, uint);
+void swap_nodes(stack_t **stack, unsigned int);
+void pall(stack_t **stack, unsigned int);
+void pop_stack(stack_t **stack, uint);
 void execute_opcode(char *opcode, stack_t **stack, int line_number);
 int string_cmt(char *token, int line_count);
+void push_helper(char *opcode, stack_t **stack, int line_number);
+void free_stack_memo(stack_t *top);
 int check_integer(char *str);
 
 #endif
+
