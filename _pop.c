@@ -19,3 +19,4 @@ void pop_stack(stack_t **stack, uint line_pop)
 	free(*stack);
 	*stack = vartmp;
 }
+
