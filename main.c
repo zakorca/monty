@@ -1,7 +1,6 @@
 #include "monty.h"
 /**
  * main - the main function
- *
  * @argc: C arg
  * @argv: V arg
  *
@@ -32,11 +31,16 @@ int main(int argc, char **argv)
 		line_number++;
 		opcode = strtok(buffer, " \t\n");
 		if (string_cmt(opcode, line_number) == 1)
+		{
 			continue;
+		}
 		if (opcode)
+		{
 			execute_opcode(opcode, &stack, line_number);
+		}
 	}
 	fclose(file);
 	free_stack_memo(stack);
 	return (0);
 }
+
