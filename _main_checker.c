@@ -1,7 +1,7 @@
 #include "monty.h"
 int push_val;
 /**
- * execute_opcode - handle opcode execute.
+ * execute_opcode - handle opcode execute
  *
  * @opcode: the opcode
  * @stack: the head
@@ -38,8 +38,10 @@ void execute_opcode(char *opcode, stack_t **stack, int line_number)
 		pint_func(stack, line_number);
 	}
 	else
+	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
 		exit(EXIT_FAILURE);
+	}
 }
 /**
  * string_cmt - if it is comment
@@ -51,8 +53,10 @@ void execute_opcode(char *opcode, stack_t **stack, int line_number)
 int string_cmt(char *token, int line_count)
 {
 	if (token == NULL || token[0] == '#')
+	{
 		line_count++;
 		return (1);
+	}
 	return (-1);
 }
 /**
@@ -76,3 +80,4 @@ void free_stack_memo(stack_t *top_var)
 
 	free(top_var);
 }
+
