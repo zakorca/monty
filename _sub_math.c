@@ -19,3 +19,4 @@ void sub(stack_t **stack, uint line)
 	pop_stack(stack, line);
 	(*stack)->n = subnum;
 }
+
