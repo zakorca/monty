@@ -1,7 +1,6 @@
 #include "monty.h"
 /**
  * pint_func - code checking ..
- *
  * @stack: pointer to stack
  * @line_num: line nmbr
  *
@@ -17,3 +16,4 @@ void pint_func(stack_t **stack, unsigned int line_num)
 	}
 	printf("%d\n", (*stack)->n);
 }
+
