@@ -21,3 +21,4 @@ int check_integer(char *string)
 	}
 	return (0);
 }
+
