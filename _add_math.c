@@ -1,9 +1,11 @@
 #include "monty.h"
+
 /**
  * add_nodes - add 2 nodes & pop the last.
  * @stack: head
  * @line_add: line
  */
+
 void add_nodes(stack_t **stack, uint line_add)
 {
 	int sum_node;
@@ -17,4 +19,3 @@ void add_nodes(stack_t **stack, uint line_add)
 	pop_stack(stack, line_add);
 	(*stack)->n = sum_node;
 }
-
