@@ -5,7 +5,6 @@
  * @stack: head
  * @line_add: line
  */
-
 void add_nodes(stack_t **stack, uint line_add)
 {
 	int sum_node;

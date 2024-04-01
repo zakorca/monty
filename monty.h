@@ -5,8 +5,10 @@
 #include <string.h>
 #include <stdio.h>
 
-extern int push_val;
+
 #define uint unsigned int
+
+extern int push_val;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)

@@ -1,5 +1,7 @@
 #include "monty.h"
+
 int push_val;
+
 /**
  * execute_opcode - handle opcode execute
  *
